@@ -1,10 +1,13 @@
 package com.example.roomdamo2.data.database
 
 import android.content.Context
+import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.roomdamo2.data.dao.CiudadDao
+import com.example.roomdamo2.data.model.Ciudad
 
+@Database(entities = [Ciudad::class], version = 3, exportSchema = false)
 abstract class BaseDatos : RoomDatabase() {
     abstract fun CiudadDao(): CiudadDao
 

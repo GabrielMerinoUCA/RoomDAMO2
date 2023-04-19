@@ -11,7 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class CiudadViewModel(application: Application): AndroidViewModel(application) {
-    private val ciudades: LiveData<List<Ciudad>>
+    val ciudades: LiveData<List<Ciudad>>
     private val repository: CiudadRepository
 
     init {
